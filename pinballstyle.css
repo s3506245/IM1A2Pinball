@@ -1,0 +1,636 @@
+body {
+  overflow-x: hidden;
+
+  width: 100%;
+
+  background-color: #FFCB4F;
+}
+
+
+/* Sunburst*/
+
+.sunburst {
+  display: flex;
+  overflow: hidden;
+
+  width: 100%;
+  height: 300px;
+
+  background: #FA5A5A;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.sunburst .outer {
+  width: 4000px;
+  height: 1800px;
+  margin-top: 300px;
+  padding-top: 2200px;
+
+  animation-name: rotate1;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.sunburst b {
+  display: block;
+
+  width: 0;
+  height: 0;
+  margin: -400px 0 0 0;
+
+  border-width: 200px 2000px;
+  border-style: solid;
+  border-color: transparent #FFEDC4;
+}
+
+.sunburst:hover {
+  background: #E9FAED;
+}
+
+.sunburst:hover b {
+  border-color: transparent #FFCB4F;
+}
+
+.sunburst b:nth-child(1) {
+  transform: rotate(20deg);
+}
+
+.sunburst b:nth-child(2) {
+  transform: rotate(40deg);
+}
+
+.sunburst b:nth-child(3) {
+  transform: rotate(60deg);
+}
+
+.sunburst b:nth-child(4) {
+  transform: rotate(80deg);
+}
+
+.sunburst b:nth-child(5) {
+  transform: rotate(100deg);
+}
+
+.sunburst b:nth-child(6) {
+  transform: rotate(120deg);
+}
+
+.sunburst b:nth-child(7) {
+  transform: rotate(140deg);
+}
+
+.sunburst b:nth-child(8) {
+  transform: rotate(160deg);
+}
+
+.sunburst b:nth-child(9) {
+  transform: rotate(180deg);
+}
+
+@keyframes rotate1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(20deg);
+  }
+}
+
+.logo {
+  position: absolute;
+  z-index: 9999;
+  right: 0;
+  left: 0;
+
+  margin-top: -150px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.logotext {
+  position: absolute;
+  z-index: 999999;
+  right: 0;
+  left: 0;
+
+  margin-top: -100px;
+  margin-right: auto;
+  margin-left: auto;
+
+  text-align: center;
+  letter-spacing: 30px;
+
+  font-family: 'Rubik Mono One';
+}
+
+.welcome {
+  margin-bottom: -10px;
+
+  text-transform: uppercase;
+
+  color: #01BE70;
+  text-shadow: 0 13px 0 #565656;
+
+  font-size: 5em;
+
+  -webkit-text-stroke: 2px #E9FAED;
+}
+
+.welcome:hover {
+  color: #FFEDC4;
+  text-shadow: 0 13px 0 #01BE70;
+
+  -webkit-text-stroke: 2px white;
+}
+
+.to {
+  margin-bottom: 20px;
+
+  letter-spacing: 0;
+  text-transform: uppercase;
+
+  color: #FFCB4F;
+  text-shadow: 0 13px 0 #565656;
+
+  font-size: 30px;
+
+  -webkit-text-stroke: 1px #565656;
+}
+
+.to:hover {
+  color: #FFEDC4;
+  text-shadow: 0 13px 0 #FFCB4F;
+
+  -webkit-text-stroke: 2px white;
+}
+
+.pinballexpo {
+  margin-bottom: 30px;
+
+  text-transform: uppercase;
+
+  color: #FA5A5A;
+  text-shadow: 0 13px 0 #565656;
+
+  font-size: 5em;
+  line-height: 0.5em;
+
+  -webkit-text-stroke: 2px #E9FAED;
+}
+
+.pinballexpo:hover {
+  color: #FFEDC4;
+  text-shadow: 0 13px 0 #FA5A5A;
+
+  -webkit-text-stroke: 2px white;
+}
+
+.y1994 {
+  color: #2C5B95;
+  text-shadow: 0 -5px 0 #E9FAED;
+
+  font-size: 2em;
+}
+
+.y1994:hover {
+  color: #E9FAED;
+  text-shadow: 0 5px 0 #FFEDC4;
+}
+
+.star {
+  position: absolute;
+  top: -125px;
+  right: -100px;
+
+  display: block;
+
+  width: 250px;
+  height: 250px;
+
+  background: url('img/Star.png');
+}
+
+.pinball {
+  position: relative;
+
+  display: block;
+
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+
+  border: 15px solid #2C5B95;
+  border-radius: 50%;
+  background-color: #E9FAED;
+}
+
+.pinball:hover {
+  border: 15px solid #FFCB4F;
+  background-color: white;
+}
+
+.pinballlight {
+  position: absolute;
+  top: 40px;
+  right: 60px;
+
+  display: block;
+
+  width: 50px;
+  height: 50px;
+
+  border-radius: 50%;
+  background-color: white;
+}
+
+.divider {
+  position: absolute;
+  z-index: 9;
+  top: 295px;
+
+  display: block;
+
+  width: 100%;
+  height: 10px;
+
+  background-color: #2C5B95;
+}
+
+.divider2 {
+  position: absolute;
+  z-index: 8;
+  top: 296px;
+
+  display: block;
+
+  width: 100vw;
+  height: 40px;
+
+  animation-name: stripe;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  background-image: repeating-linear-gradient(135deg, #2C5B95 0px, #2C5B95 30px, transparent 30px, transparent 50px, #01BE70 50px, #01BE70 80px, transparent 80px, transparent 100px);
+  background-size: 140px 100%;
+}
+
+.logowrapper:hover .divider2 {
+  background-image: repeating-linear-gradient(135deg, #FFEDC4 0px, #FFEDC4 30px, transparent 30px, transparent 50px, #E9FAED 50px, #E9FAED 80px, transparent 80px, transparent 100px);
+}
+
+.invitation {
+  position: relative;
+
+  width: 580px;
+  margin: 0 auto;
+
+  text-align: center;
+
+  color: #565656;
+  border: 9px dotted #565656;
+  border-radius: 20px;
+  background-color: #FA5A5A;
+  text-shadow: 5px 0 #FFCB4F;
+
+  font-family: "Rubik Mono One";
+  font-size: 1.2em;
+  line-height: 1em;
+}
+
+.invitation:hover {
+  color: #E9FAED;
+  border: 9px dotted #FFEDC4;
+}
+
+.info {
+  position: relative;
+
+  box-sizing: border-box;
+  width: 580px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  padding: 30px;
+
+  text-align: center;
+  text-align: justify;
+
+  color: #565656;
+  border: 9px dotted #565656;
+  border-radius: 20px;
+  background-color: #01BE70;
+  text-shadow: 1px 0 #FFCB4F;
+
+  font-family: "Raleway";
+  font-size: 1em;
+  line-height: 1.2em;
+}
+
+@keyframes stripe {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 140px 0;
+  }
+}
+
+.wrapper {
+  position: relative;
+  z-index: -9999;
+
+  margin: 0;
+}
+
+.dotted {
+  position: fixed;
+  top: 0;
+  left: 50%;
+
+  display: block;
+
+  width: 960px;
+  height: 100%;
+  margin: 0;
+  margin-left: -480px;
+  /* Half of the width */
+
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAKklEQVQoU2NkIBIwEqmOgTyFL3+9/Q+zQZxNGMUQFA71FeLzGHmeoYqJAN4bDAuIsaBUAAAAAElFTkSuQmCC
+) repeat;
+}
+
+.icon {
+  display: block;
+
+  width: 100px;
+  height: 110.5px;
+}
+
+.iconwrapper {
+  position: relative;
+  top:200px;
+
+  width: 960px;
+  margin: 0 auto;
+}
+
+.schedule {
+  position: absolute;
+  bottom: 100px;
+  left: 60px;
+
+  background: url('img/schedule1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.schedule:hover {
+  background: url('img/schedule2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.scheduletext {
+  position: absolute;
+  bottom: 30px;
+  left: 60px;
+text-align: center;
+width: 100px;
+
+  color:#2C5B95;
+
+  font-family: "Rubik Mono One";
+}
+
+.registration {
+  position: absolute;
+  bottom: 10px;
+  left: 240px;
+
+  background: url('img/check1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.registration:hover {
+  background: url('img/check2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.registrationtext {
+  position: absolute;
+  bottom: 130px;
+  left: 190px;
+
+  width: 200px;
+
+  text-align: center;
+
+  color:#2C5B95;
+
+  font-family: "Rubik Mono One";
+
+
+}
+
+.direction {
+  position: absolute;
+  right: 240px;
+  bottom: 10px;
+
+  background: url('img/home1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.direction:hover {
+  background: url('img/home2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.directiontext {
+  position: absolute;
+  width: 200px;
+  right: 190px;
+  bottom: 130px;
+  color:#2C5B95;
+text-align: center;
+  font-family: "Rubik Mono One";
+}
+
+.visit {
+  position: absolute;
+  right: 60px;
+  bottom: 100px;
+
+  background: url('img/pinball1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.visit:hover {
+  background: url('img/pinball2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.visittext {
+  position: absolute;
+  right: 10px;
+  bottom: 50px;
+  width: 200px;
+  color:#2C5B95;
+text-align: center;
+  font-family: "Rubik Mono One";
+}
+
+.other {
+  position: relative;
+  z-index: 9999;
+
+  margin: 0 auto;
+  margin-top:-150px;
+
+  background: url('img/info1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.other:hover {
+  background: url('img/info2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.othertext {
+  position: relative;
+  z-index: 9999;
+  width: 200px;
+  color:#2C5B95;
+  text-align: center;
+  font-family: "Rubik Mono One";
+  margin: 0 auto;
+  margin-top:10px;
+}
+
+footer {
+  position: relative;
+
+  width: 100%;
+  height: 100px;
+  margin-top: 250px;
+
+  background-color: #2C5B95;
+}
+
+.divider3 {
+  position: absolute;
+  z-index: 9;
+  bottom: 100px;
+
+  display: block;
+
+  width: 100%;
+  height: 10px;
+
+  background-color: #2C5B95;
+}
+
+.divider4 {
+  position: absolute;
+  z-index: 8;
+  bottom: 100px;
+
+  display: block;
+
+  width: 100vw;
+  height: 40px;
+
+  animation-name: stripe;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  background-image: repeating-linear-gradient(135deg, #2C5B95 0px, #2C5B95 30px, transparent 30px, transparent 50px, #01BE70 50px, #01BE70 80px, transparent 80px, transparent 100px);
+  background-size: 140px 100%;
+}
+
+.footerwrapper {
+  position: relative;
+
+  width: 960px;
+  margin: 0 auto;
+}
+
+.flipper1 {
+  position: absolute;
+  top:30px;
+  left: 0;
+
+  width: 290px;
+
+  text-align: center;
+
+  color: #01BE70;
+  border: 9px dotted #FFCB4F;
+  border-radius: 20px;
+  background-color: #565656;
+  text-shadow: 0.5px 0 #FFEDC4;
+
+  font-family: "Rubik Mono One";
+  font-size: 1em;
+  line-height: 1em;
+}
+
+.flipper1:hover {
+  color: #FFEDC4;
+  border: 9px dotted #FFEDC4;
+  background-color:#FFCB4F;
+  text-shadow: 1px 0 #01BE70;
+}
+
+.flipper2 {
+  position: absolute;
+  top: 30px;
+  right: 0;
+
+  width: 300px;
+
+  text-align: center;
+
+  color: #FA5A5A;
+  border: 9px dotted #FFCB4F;
+  border-radius: 20px;
+  background-color:#565656;
+  text-shadow: 0.5px 0 #FFEDC4;
+
+  font-family: "Rubik Mono One";
+  font-size: 1em;
+  line-height: 1em;
+}
+
+.flipper2:hover {
+  color: #FFEDC4;
+  border: 9px dotted #FFEDC4;
+  background-color:#FFCB4F;
+  text-shadow: 1px 0 #FA5A5A;
+}
+
+/*
+
+
+}
+ #FA5A5A
+ #FFEDC4
+ #E9FAED
+ #2C5B95
+ #01BE70
+ #FFCB4F
+ #565656
+ */
